@@ -1,0 +1,54 @@
+{
+    "name": "atiladanvi/cep-repository",
+    "description": "",
+    "keywords": [
+        "atiladanvi",
+        "cep-repository"
+    ],
+    "homepage": "https://github.com/atiladanvi/cep-repository",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Atila Silva",
+            "email": "atila.danvi@outlook.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "illuminate/support": "5.8.*"
+    },
+    "require-dev": {
+        "orchestra/testbench": "3.8.*",
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Atiladanvi\\CepRepository\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Atiladanvi\\CepRepository\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Atiladanvi\\CepRepository\\CepRepositoryServiceProvider"
+            ],
+            "aliases": {
+                "CepRepository": "Atiladanvi\\CepRepository\\CepRepositoryFacade"
+            }
+        }
+    }
+}
