@@ -2,14 +2,16 @@
 
 namespace Atiladanvi\CepRepository\Tests;
 
+use Atiladanvi\CepRepository\Fractals\POSTMONFractal;
 use Atiladanvi\CepRepository\Repositories\CepPOSTMONRepository;
 use PHPUnit\Framework\TestCase;
+use League\Fractal;
 
 /**
- * Class POSTMONRepositoryTest
+ * Class POSTMONFractalTest
  * @package Atiladanvi\CepRepository\Tests
  */
-class POSTMONRepositoryTest extends TestCase
+class POSTMONFractalTest extends TestCase
 {
 
     /**
@@ -19,7 +21,13 @@ class POSTMONRepositoryTest extends TestCase
      */
     private $postmonRepository;
 
+    /**
+     * address
+     *
+     * @var
+     */
     private $address;
+
     /**
      * set up
      */
@@ -30,10 +38,12 @@ class POSTMONRepositoryTest extends TestCase
     }
 
     /**
-     * test get cep
+     * test transform
      */
-    public function test_get()
+    public function test_transform()
     {
-        $this->assertTrue($this->address['bairro'] === 'Maracajá (Mosqueiro)');
+       $transformer = new Fractal\Resource\Item($this->address, new POSTMONFractal);
+
+       $this->assertNotNull($transformer->getData());
     }
 }

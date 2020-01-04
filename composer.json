@@ -17,9 +17,10 @@
     ],
     "require": {
         "php": "^7.1",
+        "ext-json": "*",
         "guzzlehttp/guzzle": "~6.0",
         "illuminate/support": "5.8.*",
-      "ext-json": "*"
+        "league/fractal": "^0.18.0"
     },
     "require-dev": {
         "orchestra/testbench": "3.8.*",
