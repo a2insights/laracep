@@ -2,7 +2,23 @@
 
 namespace Atiladanvi\CepRepository;
 
+use Atiladanvi\CepRepository\Repositories\CepPOSTMONRepository;
+
+/**
+ * Class CepRepository
+ * @package Atiladanvi\CepRepository
+ */
 class CepRepository
 {
-    // Build your next great package.
+
+    /**
+     * @param $cep
+     * @return mixed
+     */
+    public function get($cep)
+    {
+        $repository = app(CepPOSTMONRepository::class);
+
+        return $repository->get($cep);
+    }
 }
