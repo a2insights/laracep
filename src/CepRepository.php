@@ -15,7 +15,7 @@ class CepRepository
      * @param $cep
      * @return mixed
      */
-    public function get($cep)
+    public static function get($cep)
     {
         $repository = app(CepPOSTMONRepository::class);
 

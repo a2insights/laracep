@@ -4,8 +4,10 @@ namespace Atiladanvi\CepRepository;
 
 use Illuminate\Support\Facades\Facade;
 
+
 /**
- * @see \Atiladanvi\CepRepository\Skeleton\SkeletonClass
+ * Class CepRepositoryFacade
+ * @package Atiladanvi\CepRepository
  */
 class CepRepositoryFacade extends Facade
 {
