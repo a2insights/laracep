@@ -1,11 +1,18 @@
-# Very short description of the package
+# Laravel Cep Repository
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/atiladanvi/cep-repository.svg?style=flat-square)](https://packagist.org/packages/atiladanvi/cep-repository)
-[![Build Status](https://img.shields.io/travis/atiladanvi/cep-repository/master.svg?style=flat-square)](https://travis-ci.org/atiladanvi/cep-repository)
-[![Quality Score](https://img.shields.io/scrutinizer/g/atiladanvi/cep-repository.svg?style=flat-square)](https://scrutinizer-ci.com/g/atiladanvi/cep-repository)
 [![Total Downloads](https://img.shields.io/packagist/dt/atiladanvi/cep-repository.svg?style=flat-square)](https://packagist.org/packages/atiladanvi/cep-repository)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
-This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what PSRs you support to avoid any confusion with users and contributors.
+Laravel Cep Repository requires [PHP](https://php.net) 7.2-7.4. This particular version supports Laravel 6-7.
+
+| Cep Repository |  L5.8        | L6                 | L7                 |
+|----------|--------------------|--------------------|--------------------|
+| 0.0.1      |:heavy_check_mark:  | :x:                | :x:                |
+| 0.0.2      |:heavy_check_mark:  |:heavy_check_mark:  | :x:                |
+| 0.0.3      |:heavy_check_mark:  |:heavy_check_mark:  | :heavy_check_mark: |
+
+To get the latest version, simply require the project using [Composer](https://getcomposer.org):
 
 ## Installation
 
@@ -17,14 +24,8 @@ composer require atiladanvi/cep-repository
 
 ## Usage
 
-``` php
-// Usage description here
-```
-
-### Testing
-
-``` bash
-composer test
+```php
+$adress = CepRepository::get($cep);
 ```
 
 ### Changelog

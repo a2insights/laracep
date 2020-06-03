@@ -13,26 +13,25 @@ class POSTMONRepositoryTest extends TestCase
 {
 
     /**
-     * repository
+     * address
      *
-     * @var
+     * @var mixed
      */
-    private $postmonRepository;
-
     private $address;
+
     /**
      * set up
      */
-    protected function setUp()
+    protected function setUp() : void
     {
-        $this->postmonRepository =  app(CepPOSTMONRepository::class);
-        $this->address = $this->postmonRepository->get(66911030);
+        $postmonRepository =  app(CepPOSTMONRepository::class);
+        $this->address = $postmonRepository->get(66911030);
     }
 
     /**
      * test get cep
      */
-    public function test_get()
+    public function test_get() : void
     {
         $this->assertTrue($this->address['bairro'] === 'Maracajá (Mosqueiro)');
     }

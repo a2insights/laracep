@@ -15,13 +15,6 @@ class POSTMONFractalTest extends TestCase
 {
 
     /**
-     * repository
-     *
-     * @var
-     */
-    private $postmonRepository;
-
-    /**
      * address
      *
      * @var
@@ -31,16 +24,16 @@ class POSTMONFractalTest extends TestCase
     /**
      * set up
      */
-    protected function setUp()
+    protected function setUp(): void
     {
-        $this->postmonRepository =  app(CepPOSTMONRepository::class);
-        $this->address = $this->postmonRepository->get(66911030);
+        $postmonRepository =  app(CepPOSTMONRepository::class);
+        $this->address = $postmonRepository->get(66911030);
     }
 
     /**
      * test transform
      */
-    public function test_transform()
+    public function test_transform(): void
     {
        $transformer = new Fractal\Resource\Item($this->address, new POSTMONFractal);
 

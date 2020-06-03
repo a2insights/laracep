@@ -1,10 +1,7 @@
 {
     "name": "atiladanvi/cep-repository",
-    "description": "",
-    "keywords": [
-        "atiladanvi",
-        "cep-repository"
-    ],
+    "description": "A single interface to get address from any cep service",
+    "keywords": ["atiladanvi", "cep-repository", "laravel"],
     "homepage": "https://github.com/atiladanvi/cep-repository",
     "license": "MIT",
     "type": "library",
@@ -16,15 +13,15 @@
         }
     ],
     "require": {
-        "php": "^7.1",
+        "php": "^7.2",
         "ext-json": "*",
-        "guzzlehttp/guzzle": "~6.0",
-        "illuminate/support": "5.8.* || ^6.0",
+        "guzzlehttp/guzzle": "^6.5",
+        "illuminate/support": "^5.8 || ^6.0 || ^7.0",
         "league/fractal": "^0.18.0"
     },
     "require-dev": {
-        "orchestra/testbench": "3.8.*",
-        "phpunit/phpunit": "^7.0"
+        "orchestra/testbench": "^5.0",
+        "phpunit/phpunit": "^8.5|^9.0"
     },
     "autoload": {
         "psr-4": {
