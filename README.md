@@ -27,6 +27,16 @@ composer require atiladanvi/cep-repository
 ```php
 $adress = CepRepository::get($cep);
 ```
+output:
+```php
+[
+  "cep" => "66911030",
+  "estado" => "Pará",
+  "municipio" => "Belém",
+  "bairro" => "Maracajá (Mosqueiro)",
+  "logradouro" => "Rua Veiga Cabral",
+];
+```
 
 ### Changelog
 
@@ -42,13 +52,9 @@ If you discover any security related issues, please email atila.danvi@outlook.co
 
 ## Credits
 
-- [Atila Silva](https://github.com/atiladanvi)
+- [Atila Silva](https://github.com/Atiladanvi)
 - [All Contributors](../../contributors)
 
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
-
-## Laravel Package Boilerplate
-
-This package was generated using the [Laravel Package Boilerplate](https://laravelpackageboilerplate.com).

@@ -10,7 +10,7 @@ interface CepRepositoryContract
 {
     /**
      * @param string $cep
-     * @return mixed
+     * @return array
      */
     public function get(string $cep);
 }

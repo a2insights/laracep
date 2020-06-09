@@ -10,7 +10,6 @@ use Atiladanvi\CepRepository\Repositories\CepPOSTMONRepository;
  */
 class CepRepository
 {
-
     /**
      * @param $cep
      * @return mixed

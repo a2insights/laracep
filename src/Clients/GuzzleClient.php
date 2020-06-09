@@ -9,7 +9,7 @@ use GuzzleHttp\Client as Client;
  * Class GuzzleClient
  * @package Atiladanvi\CepRepository\Clients
  */
-class GuzzleClient implements ClientContract
+abstract class GuzzleClient implements ClientContract
 {
     /**
      * Base uri
@@ -52,7 +52,6 @@ class GuzzleClient implements ClientContract
      * @var array
      */
     private $headers = [];
-
 
     /**
      * GuzzleClient constructor.
@@ -112,6 +111,8 @@ class GuzzleClient implements ClientContract
     }
 
     /**
+     * Set query
+     *
      * @param array $query
      * @return GuzzleClient
      */
@@ -123,6 +124,8 @@ class GuzzleClient implements ClientContract
     }
 
     /**
+     * Get uri
+     *
      * @return string
      */
     public function getUri()
@@ -131,9 +134,10 @@ class GuzzleClient implements ClientContract
     }
 
     /**
-     * Make a request
+     * Request
      *
      * @return mixed
+     * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function request()
     {

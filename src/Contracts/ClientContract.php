@@ -8,7 +8,6 @@ namespace Atiladanvi\CepRepository\Contracts;
  */
 interface ClientContract
 {
-
     /**
      * @param array $headers
      * @return mixed
