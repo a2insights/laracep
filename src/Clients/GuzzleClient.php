@@ -23,35 +23,35 @@ abstract class GuzzleClient implements ClientContract
      *
      * @var Client
      */
-    public $client;
+    protected $client;
 
     /**
      * Cep
      *
      * @var string
      */
-    public $cep;
+    protected $cep;
 
     /**
      * Form params
      *
      * @var array
      */
-    private $params = [];
+    protected $params = [];
 
     /**
      * Query
      *
      * @var array
      */
-    private $query = [];
+    protected $query = [];
 
     /**
      * Header of request
      *
      * @var array
      */
-    private $headers = [];
+    protected $headers = [];
 
     /**
      * GuzzleClient constructor.
