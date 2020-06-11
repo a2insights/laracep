@@ -33,6 +33,13 @@ abstract class GuzzleClient implements ClientContract
     protected $cep;
 
     /**
+     * Body
+     *
+     * @var string
+     */
+    protected $body;
+
+    /**
      * Form params
      *
      * @var array
@@ -54,11 +61,17 @@ abstract class GuzzleClient implements ClientContract
     protected $headers = [];
 
     /**
+     * Method of request
+     *
+     * @var array
+     */
+    protected $method = 'GET';
+
+    /**
      * GuzzleClient constructor.
      */
     public function __construct()
     {
-
         $this->client = new Client(
             [
                 'base_uri' => $this->baseUri
@@ -111,6 +124,19 @@ abstract class GuzzleClient implements ClientContract
     }
 
     /**
+     * Set body
+     *
+     * @param string $body
+     * @return $this
+     */
+    public function setBody($body) : GuzzleClient
+    {
+        $this->body = $body;
+
+        return $this;
+    }
+
+    /**
      * Set query
      *
      * @param array $query
@@ -134,6 +160,46 @@ abstract class GuzzleClient implements ClientContract
     }
 
     /**
+     * Get headers
+     *
+     * @return string
+     */
+    public function getBody()
+    {
+        return $this->body;
+    }
+
+    /**
+     * Get headers
+     *
+     * @return mixed
+     */
+    public function getHeaders()
+    {
+        return $this->headers;
+    }
+
+    /**
+     * Get params
+     *
+     * @return array
+     */
+    public function getParams()
+    {
+        return $this->params;
+    }
+
+    /**
+     * Get query
+     *
+     * @return array
+     */
+    public function getQuery()
+    {
+        return $this->query;
+    }
+
+    /**
      * Request
      *
      * @return mixed
@@ -141,12 +207,15 @@ abstract class GuzzleClient implements ClientContract
      */
     public function request()
     {
-        return $this->client->request('GET' , $this->getUri(),
-            [
-                'headers' =>  $this->headers,
-                'form_params' => $this->params,
-                'query' => $this->query
-            ]
+        return $this->client->request($this->method, $this->getUri(),
+            collect([
+                'headers' =>  $this->getHeaders(),
+                'form_params' => $this->getParams(),
+                'body' => $this->getBody(),
+                'query' => $this->getQuery()
+            ])->filter(function ($option) {
+                return $option;
+            })->toArray()
         );
     }
 }

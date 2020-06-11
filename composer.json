@@ -15,6 +15,7 @@
     "require": {
         "php": "^7.2",
         "ext-json": "*",
+        "ext-simplexml": "*",
         "guzzlehttp/guzzle": "^6.5",
         "illuminate/support": "^5.8 || ^6.0 || ^7.0",
         "league/fractal": "^0.18.0"

@@ -42,7 +42,7 @@ class CepRepositoryAbstract implements CepRepositoryContract
         return $this->serialize($result);
     }
 
-    private function serialize($result)
+    protected function serialize($result)
     {
         $this->manager->setSerializer(app(ArraySerializer::class));
 

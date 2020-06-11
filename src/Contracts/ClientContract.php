@@ -15,6 +15,12 @@ interface ClientContract
     public function setHeaders(array $headers);
 
     /**
+     * @param $body
+     * @return string
+     */
+    public function setBody(string $body);
+
+    /**
      * @param array $params
      * @return mixed
      */
@@ -33,9 +39,29 @@ interface ClientContract
     public function setCep(string $cep);
 
     /**
-     * @return mixed
+     * @return array
+     */
+    public function getHeaders();
+
+    /**
+     * @return string
+     */
+    public function getBody();
+
+    /**
+     * @return string
      */
     public function getUri();
+
+    /**
+     * @return array
+     */
+    public function getParams();
+
+    /**
+     * @return array
+     */
+    public function getQuery();
 
     /**
      * @return mixed
