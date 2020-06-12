@@ -20,17 +20,20 @@ class CepRepositoryAbstract implements CepRepositoryContract
 
     protected $manager;
 
+    private $responseContents;
+
     public function __construct($client, $fractal)
     {
         $this->client = app($client);
         $this->fractal = app($fractal);
         $this->manager =  new Manager();
+        $this->manager->setSerializer(app(ArraySerializer::class));
     }
 
     public function get(string $cep)
     {
         try{
-            $result = $this->client
+            $this->responseContents = $this->client
                 ->setCep($cep)
                 ->request()
                 ->getBody()
@@ -39,15 +42,20 @@ class CepRepositoryAbstract implements CepRepositoryContract
             return null;
         }
 
-        return $this->serialize($result);
+        return $this->createData();
     }
 
-    protected function serialize($result)
+    protected function createData()
     {
-        $this->manager->setSerializer(app(ArraySerializer::class));
+        return $this->manager
+            ->createData(
+                new Item($this->parseContents($this->responseContents), $this->fractal)
+            )
+            ->toArray();
+    }
 
-        $address = new Item(json_decode($result), $this->fractal);
-
-        return $this->manager->createData($address)->toArray();
+    protected function parseContents($responseContents)
+    {
+        return json_decode($responseContents);
     }
 }

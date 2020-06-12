@@ -4,8 +4,6 @@ namespace Atiladanvi\CepRepository\Repositories;
 
 use Atiladanvi\CepRepository\Clients\CORREIROSClient;
 use Atiladanvi\CepRepository\Fractals\CORREIOSFractal;
-use League\Fractal\Resource\Item;
-use League\Fractal\Serializer\ArraySerializer;
 use SimpleXMLElement;
 
 class CepCORREIROSRepository extends CepRepositoryAbstract
@@ -15,12 +13,9 @@ class CepCORREIROSRepository extends CepRepositoryAbstract
         parent::__construct(CORREIROSClient::class, CORREIOSFractal::class);
     }
 
-    protected function serialize($result)
+    protected function parseContents($responseContents)
     {
-        $this->manager->setSerializer(app(ArraySerializer::class));
-        $address = new Item(json_decode(json_encode($this->readXml($result))), $this->fractal);
-
-        return $this->manager->createData($address)->toArray();
+        return (object) (array) $this->readXml($responseContents);
     }
 
     private function readXml($xml)
