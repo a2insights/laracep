@@ -2,14 +2,13 @@
 
 namespace Atiladanvi\CepRepository\Tests;
 
-use Atiladanvi\CepRepository\Repositories\CepVIARepository;
-use PHPUnit\Framework\TestCase;
+use Atiladanvi\CepRepository\Repositories\CepWEBMANIARepository;
 
-class VIARepositoryTest extends TestCase
+class WEBMANIARepositoryTest extends TestCase
 {
     public function test_get() : void
     {
-        $viaRepository =  app(CepVIARepository::class);
+        $viaRepository =  app(CepWEBMANIARepository::class);
         $address = $viaRepository->get(66911030);
         $this->assertTrue($address['bairro'] === 'Maracajá (Mosqueiro)');
     }
