@@ -40,6 +40,8 @@ class CepRepositoryAbstract implements CepRepositoryContract
                 ->getContents();
         }catch (BadResponseException $ex) {
             return null;
+        }catch (\Exception $ex) {
+            return null;
         }
 
         return $this->createData();
