@@ -11,6 +11,7 @@ Laravel Cep Repository requires [PHP](https://php.net) 7.2-7.4. This particular 
 | 0.0.1      |:heavy_check_mark:  | :x:                | :x:                |
 | 0.0.2      |:heavy_check_mark:  |:heavy_check_mark:  | :x:                |
 | 0.0.3      |:heavy_check_mark:  |:heavy_check_mark:  | :heavy_check_mark: |
+| 0.1.0      |:heavy_check_mark:  |:heavy_check_mark:  | :heavy_check_mark: |
 
 To get the latest version, simply require the project using [Composer](https://getcomposer.org):
 
