@@ -16,7 +16,7 @@ interface HandlerContract
 
     /**
      * @param string $request
-     * @return array|null
+     * @return object|null
      */
-    public function handle(string $request): ?array;
+    public function handle(string $request): ?object;
 }

@@ -3,14 +3,13 @@
 namespace Atiladanvi\CepRepository\Repositories;
 
 use Atiladanvi\CepRepository\Clients\CORREIROSClient;
-use Atiladanvi\CepRepository\Fractals\CORREIOSFractal;
 use SimpleXMLElement;
 
 class CepCORREIROSRepository extends CepRepositoryAbstract
 {
     public function __construct()
     {
-        parent::__construct(CORREIROSClient::class, CORREIOSFractal::class);
+        parent::__construct(CORREIROSClient::class);
     }
 
     protected function parseContents($responseContents)
@@ -26,5 +25,16 @@ class CepCORREIROSRepository extends CepRepositoryAbstract
         return $xml->xpath('//soapBody')[0]
             ->xpath('//ns2consultaCEPResponse')[0]
             ->xpath('//return')[0];
+    }
+
+    public function transform($data): array
+    {
+        return [
+            'cep' => $data->cep,
+            'estado' => $data->uf,
+            'municipio' => $data->cidade,
+            'bairro' => $data->bairro,
+            'logradouro' => $data->end,
+        ];
     }
 }

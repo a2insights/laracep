@@ -7,7 +7,7 @@ use Atiladanvi\CepRepository\Handlers\VIAHandler;
 
 class HandlersTest extends TestCase
 {
-    public function test_get_adress_by_handler() : void
+    public function test_get_address_by_handler() : void
     {
         $viaHandler = new VIAHandler();
         $postmonHandler = new POSTMONHandler();
@@ -17,6 +17,6 @@ class HandlersTest extends TestCase
         $address = $viaHandler
             ->handle(66911030);
 
-        $this->assertTrue($address['bairro'] === 'Maracajá (Mosqueiro)');
+        $this->assertTrue($address->bairro === 'Maracajá (Mosqueiro)');
     }
 }
