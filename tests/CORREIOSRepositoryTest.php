@@ -10,6 +10,6 @@ class CORREIOSRepositoryTest extends TestCase
     {
         $correioRepository =  app(CepCORREIROSRepository::class);
         $address = $correioRepository->get(66911030);
-        $this->assertTrue($address['bairro'] === 'Maracajá (Mosqueiro)');
+        $this->assertTrue($address->bairro === 'Maracajá (Mosqueiro)');
     }
 }

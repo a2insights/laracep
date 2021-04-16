@@ -10,6 +10,6 @@ class WEBMANIARepositoryTest extends TestCase
     {
         $viaRepository =  app(CepWEBMANIARepository::class);
         $address = $viaRepository->get(66911030);
-        $this->assertTrue($address['bairro'] === 'Maracajá (Mosqueiro)');
+        $this->assertTrue($address->bairro === 'Maracajá (Mosqueiro)');
     }
 }

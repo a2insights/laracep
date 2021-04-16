@@ -17,7 +17,7 @@ abstract class AbstractHandler implements HandlerContract
         return $handler;
     }
 
-    public function handle(string $request): ?array
+    public function handle(string $request): ?object
     {
         $address = app($this->repository)->get($request);
 

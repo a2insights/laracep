@@ -10,6 +10,6 @@ class POSTMONRepositoryTest extends TestCase
     {
         $postmonRepository =  app(CepPOSTMONRepository::class);
         $address = $postmonRepository->get(66911030);
-        $this->assertTrue($address['bairro'] === 'Maracajá (Mosqueiro)');
+        $this->assertTrue($address->bairro === 'Maracajá (Mosqueiro)');
     }
 }
