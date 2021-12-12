@@ -17,6 +17,6 @@ class CepFacade extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'cep-repository';
+        return 'cep';
     }
 }
