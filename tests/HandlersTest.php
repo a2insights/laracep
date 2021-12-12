@@ -1,9 +1,9 @@
 <?php
 
-namespace CepRepository\Tests;
+namespace Cep\Tests;
 
-use CepRepository\Handlers\POSTMONHandler;
-use CepRepository\Handlers\VIAHandler;
+use Cep\Handlers\POSTMONHandler;
+use Cep\Handlers\VIAHandler;
 
 class HandlersTest extends TestCase
 {

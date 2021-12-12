@@ -1,8 +1,8 @@
 <?php
 
-namespace CepRepository\Tests;
+namespace Cep\Tests;
 
-use CepRepository\Repositories\VIARepository;
+use Cep\Repositories\VIARepository;
 use PHPUnit\Framework\TestCase;
 
 class VIARepositoryTest extends TestCase

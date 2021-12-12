@@ -1,6 +1,6 @@
 <?php
 
-namespace CepRepository\Tests;
+namespace Cep\Tests;
 
 abstract  class TestCase extends  \Orchestra\Testbench\TestCase
 {

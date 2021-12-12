@@ -1,8 +1,8 @@
 <?php
 
-namespace CepRepository\Repositories;
+namespace Cep\Repositories;
 
-use CepRepository\Clients\VIAClient;
+use Cep\Clients\VIAClient;
 
 class VIARepository extends RepositoryAbstract
 {

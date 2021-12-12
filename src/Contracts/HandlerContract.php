@@ -1,10 +1,10 @@
 <?php
 
-namespace CepRepository\Contracts;
+namespace Cep\Contracts;
 
 /**
  * Interface HandlerContract
- * @package CepRepository\Contracts
+ * @package Cep\Contracts
  */
 interface HandlerContract
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace CepRepository;
+namespace Cep;
 
 use Illuminate\Support\ServiceProvider;
 
-class CepRepositoryServiceProvider extends ServiceProvider
+class CepServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
@@ -53,8 +53,8 @@ class CepRepositoryServiceProvider extends ServiceProvider
         $this->mergeConfigFrom(__DIR__.'/../config/config.php', 'cep');
 
         // Register the main class to use with the facade
-        $this->app->singleton('cep-repository', function () {
-            return new CepRepository;
+        $this->app->singleton('cep', function () {
+            return new Cep;
         });
     }
 }

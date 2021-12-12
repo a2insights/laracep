@@ -26,12 +26,12 @@ composer require atiladanvi/cep-repository
 ## Usage
 
 ```php
-$adress = CepRepository::get($cep);
+$adress = Cep::get($cep);
 ```
 output:
 
 ```php
-CepRepository\Address {
+Cep\Address {
   +cep: "66911030"
   +estado: "Pará"
   +municipio: "Belém"

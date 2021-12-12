@@ -1,8 +1,8 @@
 <?php
 
-namespace CepRepository\Handlers;
+namespace Cep\Handlers;
 
-use CepRepository\Repositories\POSTMONRepository;
+use Cep\Repositories\POSTMONRepository;
 
 class POSTMONHandler extends AbstractHandler
 {

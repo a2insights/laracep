@@ -1,8 +1,8 @@
 <?php
 
-namespace CepRepository\Repositories;
+namespace Cep\Repositories;
 
-use CepRepository\Clients\WEBMANIAClient;
+use Cep\Clients\WEBMANIAClient;
 
 class WEBMANIARepository extends RepositoryAbstract
 {

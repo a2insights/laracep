@@ -1,8 +1,8 @@
 <?php
 
-namespace CepRepository\Repositories;
+namespace Cep\Repositories;
 
-use CepRepository\Clients\POSTMONClient;
+use Cep\Clients\POSTMONClient;
 
 class POSTMONRepository extends RepositoryAbstract
 {

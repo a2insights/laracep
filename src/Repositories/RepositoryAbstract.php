@@ -1,12 +1,12 @@
 <?php
 
-namespace CepRepository\Repositories;
+namespace Cep\Repositories;
 
-use CepRepository\Address;
-use CepRepository\AddressFactory;
-use CepRepository\Contracts\CepRepositoryContract;
-use CepRepository\Contracts\Transformable;
-use CepRepository\Resources\AddressTransformer;
+use Cep\Address;
+use Cep\AddressFactory;
+use Cep\Contracts\CepRepositoryContract;
+use Cep\Contracts\Transformable;
+use Cep\Resources\AddressTransformer;
 use GuzzleHttp\Exception\BadResponseException;
 use Illuminate\Support\Facades\Log;
 use League\Fractal\Manager;
@@ -19,14 +19,14 @@ abstract class RepositoryAbstract implements CepRepositoryContract, Transformabl
     /**
      * Client instance
      *
-     * @var \CepRepository\Contracts\ClientContract|mixed
+     * @var \Cep\Contracts\ClientContract|mixed
      */
     protected $client;
 
     /**
      * Adress transformer
      *
-     * @var \CepRepository\Resources\AddressTransformer
+     * @var \Cep\Resources\AddressTransformer
      */
     protected $addressTransform;
 
@@ -59,7 +59,7 @@ abstract class RepositoryAbstract implements CepRepositoryContract, Transformabl
      * Get de address by cep
      *
      * @param string $cep
-     * @return \CepRepository\Address|null
+     * @return \Cep\Address|null
      * @throws \Exception
      */
     public function get(string $cep): ?Address

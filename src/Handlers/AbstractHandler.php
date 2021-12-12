@@ -1,8 +1,8 @@
 <?php
 
-namespace CepRepository\Handlers;
+namespace Cep\Handlers;
 
-use CepRepository\Contracts\HandlerContract;
+use Cep\Contracts\HandlerContract;
 
 abstract class AbstractHandler implements HandlerContract
 {

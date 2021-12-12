@@ -1,6 +1,6 @@
 <?php
 
-namespace CepRepository\Clients;
+namespace Cep\Clients;
 
 class POSTMONClient extends GuzzleClient
 {

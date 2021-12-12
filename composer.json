@@ -1,5 +1,5 @@
 {
-    "name": "atiladanvi/cep-repository",
+    "name": "atiladanvi/cep",
     "description": "A single interface to get address from any cep service",
     "keywords": ["cep-repository", "laravel"],
     "homepage": "https://github.com/atiladanvi/cep-repository",
@@ -26,12 +26,12 @@
     },
     "autoload": {
         "psr-4": {
-            "CepRepository\\": "src"
+            "Cep\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "CepRepository\\Tests\\": "tests"
+            "Cep\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -45,10 +45,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "CepRepository\\CepRepositoryServiceProvider"
+                "CepServiceProvider"
             ],
             "aliases": {
-                "CepRepository": "CepRepository\\CepRepositoryFacade"
+                "Cep": "CepFacade"
             }
         }
     }

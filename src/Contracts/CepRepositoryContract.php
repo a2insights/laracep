@@ -1,12 +1,12 @@
 <?php
 
-namespace CepRepository\Contracts;
+namespace Cep\Contracts;
 
-use CepRepository\Address;
+use Cep\Address;
 
 /**
- * Interface CepRepositoryContract
- * @package CepRepository\Contracts
+ * Interface CepContract
+ * @package Cep\Contracts
  */
 interface CepRepositoryContract
 {

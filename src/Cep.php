@@ -1,15 +1,15 @@
 <?php
 
-namespace CepRepository;
+namespace Cep;
 
-use CepRepository\Repositories\CORREIOSRepository;
+use Cep\Repositories\CORREIOSRepository;
 use Illuminate\Support\Str;
 
 /**
- * Class CepRepository
- * @package CepRepository
+ * Class Cep
+ * @package Cep
  */
-class CepRepository
+class Cep
 {
     /**
      * @param $cep
@@ -17,7 +17,7 @@ class CepRepository
      */
     public static function get($cep)
     {
-        $className = 'CepRepository\\Repositories\\'.Str::upper(config('cep.default')).'Repository';
+        $className = 'Cep\\Repositories\\'.Str::upper(config('cep.default')).'Repository';
 
         $repository = class_exists($className) ? app($className) : app(CORREIOSRepository::class);
 

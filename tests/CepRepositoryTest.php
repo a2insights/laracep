@@ -1,14 +1,14 @@
 <?php
 
-namespace CepRepository\Tests;
+namespace Cep\Tests;
 
-use CepRepository\CepRepository;
+use Cep\Cep;
 
-class CepRepositoryTest  extends TestCase
+class CepTest  extends TestCase
 {
     public function testGet()
     {
-        $address = CepRepository::get('66650404');
+        $address = Cep::get('66650404');
 
         $this->assertTrue($address->bairro === 'Coqueiro');
     }

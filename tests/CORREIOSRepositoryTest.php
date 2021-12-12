@@ -1,8 +1,8 @@
 <?php
 
-namespace CepRepository\Tests;
+namespace Cep\Tests;
 
-use CepRepository\Repositories\CORREIOSRepository;
+use Cep\Repositories\CORREIOSRepository;
 
 class CORREIOSRepositoryTest extends TestCase
 {

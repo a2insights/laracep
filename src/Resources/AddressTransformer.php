@@ -1,8 +1,8 @@
 <?php
 
-namespace CepRepository\Resources;
+namespace Cep\Resources;
 
-use CepRepository\Contracts\Transformable;
+use Cep\Contracts\Transformable;
 use League\Fractal\TransformerAbstract;
 
 class AddressTransformer extends TransformerAbstract implements Transformable

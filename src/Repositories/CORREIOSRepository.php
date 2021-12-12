@@ -1,8 +1,8 @@
 <?php
 
-namespace CepRepository\Repositories;
+namespace Cep\Repositories;
 
-use CepRepository\Clients\CORREIROSClient;
+use Cep\Clients\CORREIROSClient;
 use SimpleXMLElement;
 
 class CORREIOSRepository extends RepositoryAbstract

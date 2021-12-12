@@ -1,14 +1,14 @@
 <?php
 
-namespace CepRepository;
+namespace Cep;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * Class CepRepositoryFacade
- * @package CepRepository
+ * Class CepFacade
+ * @package Cep
  */
-class CepRepositoryFacade extends Facade
+class CepFacade extends Facade
 {
     /**
      * Get the registered name for facade.

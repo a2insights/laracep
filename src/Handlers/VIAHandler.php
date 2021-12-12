@@ -1,8 +1,8 @@
 <?php
 
-namespace CepRepository\Handlers;
+namespace Cep\Handlers;
 
-use CepRepository\Repositories\VIARepository;
+use Cep\Repositories\VIARepository;
 
 class VIAHandler extends AbstractHandler
 {

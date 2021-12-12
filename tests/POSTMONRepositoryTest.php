@@ -1,8 +1,8 @@
 <?php
 
-namespace CepRepository\Tests;
+namespace Cep\Tests;
 
-use CepRepository\Repositories\POSTMONRepository;
+use Cep\Repositories\POSTMONRepository;
 
 class POSTMONRepositoryTest extends TestCase
 {

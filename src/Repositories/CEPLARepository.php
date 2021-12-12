@@ -1,8 +1,8 @@
 <?php
 
-namespace CepRepository\Repositories;
+namespace Cep\Repositories;
 
-use CepRepository\Clients\CEPLAClient;
+use Cep\Clients\CEPLAClient;
 
 class CEPLARepository extends RepositoryAbstract
 {

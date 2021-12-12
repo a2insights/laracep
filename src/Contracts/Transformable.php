@@ -1,8 +1,8 @@
 <?php
 
-namespace CepRepository\Contracts;
+namespace Cep\Contracts;
 
-use CepRepository\Address;
+use Cep\Address;
 
 interface Transformable
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace CepRepository;
+namespace Cep;
 
 /**
  * Class Address
- * @package CepRepository
+ * @package Cep
  */
 class Address
 {

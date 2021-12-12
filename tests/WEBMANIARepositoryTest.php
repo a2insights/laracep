@@ -1,8 +1,8 @@
 <?php
 
-namespace CepRepository\Tests;
+namespace Cep\Tests;
 
-use CepRepository\Repositories\WEBMANIARepository;
+use Cep\Repositories\WEBMANIARepository;
 
 class WEBMANIARepositoryTest extends TestCase
 {

@@ -18,7 +18,7 @@ All notable changes to `cep-repository` will be documented in this file
 
 - Breaking changes:
   * The get method now return the type:
-    `CepRepository\Address`
+    `Cep\Address`
     that add more power to handle news features
 - Features:
    * Address object class added
