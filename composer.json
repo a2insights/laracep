@@ -1,8 +1,8 @@
 {
     "name": "atiladanvi/cep",
     "description": "A single interface to get address from any cep service",
-    "keywords": ["cep-repository", "laravel"],
-    "homepage": "https://github.com/atiladanvi/cep-repository",
+    "keywords": ["cep", "laravel"],
+    "homepage": "https://github.com/atiladanvi/cep",
     "license": "MIT",
     "type": "library",
     "authors": [
@@ -37,7 +37,6 @@
     "scripts": {
         "test": "vendor/bin/phpunit",
         "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
-
     },
     "config": {
         "sort-packages": true
