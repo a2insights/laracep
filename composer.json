@@ -44,10 +44,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "CepServiceProvider"
+                "Cep\\CepServiceProvider"
             ],
             "aliases": {
-                "Cep": "CepFacade"
+                "Cep": "Cep\\CepFacade"
             }
         }
     }
