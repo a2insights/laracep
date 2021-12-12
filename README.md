@@ -1,17 +1,18 @@
-# Laravel Cep Repository
+# Cep 
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/atiladanvi/cep-repository.svg?style=flat-square)](https://packagist.org/packages/atiladanvi/cep-repository)
-[![Total Downloads](https://img.shields.io/packagist/dt/atiladanvi/cep-repository.svg?style=flat-square)](https://packagist.org/packages/atiladanvi/cep-repository)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/atiladanvi/cep.svg?style=flat-square)](https://packagist.org/packages/atiladanvi/cep)
+[![Total Downloads](https://img.shields.io/packagist/dt/atiladanvi/cep.svg?style=flat-square)](https://packagist.org/packages/atiladanvi/cep)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
-Laravel Cep Repository requires [PHP](https://php.net) 7.2-7.4. This particular version supports Laravel 6-7.
+Laravel Cep requires [PHP](https://php.net) 7.3-8.0. This particular version supports Laravel 5-8.
 
-| Cep Repository |  L5.8        | L6                 | L7                 |
-|----------|--------------------|--------------------|--------------------|
-| 0.0.1      |:heavy_check_mark:  | :x:                | :x:                |
-| 0.0.2      |:heavy_check_mark:  |:heavy_check_mark:  | :x:                |
-| 0.0.3      |:heavy_check_mark:  |:heavy_check_mark:  | :heavy_check_mark: |
-| 0.1.0      |:heavy_check_mark:  |:heavy_check_mark:  | :heavy_check_mark: |
+| Cep   |  L^5.5             | L6                 | L7                 | L8                 |
+|-------|--------------------|--------------------|--------------------|--------------------|
+| 0.0.1 |:heavy_check_mark:  | :x:                | :x:                | :x:                |
+| 0.0.2 |:heavy_check_mark:  |:heavy_check_mark:  | :x:                | :x:                |
+| 0.0.3 |:heavy_check_mark:  |:heavy_check_mark:  | :heavy_check_mark: | :x:                |
+| 0.1.0 |:heavy_check_mark:  |:heavy_check_mark:  | :heavy_check_mark: | :x:                |
+| 0.2.0 |:heavy_check_mark:  |:heavy_check_mark:  | :heavy_check_mark: | :heavy_check_mark: |
 
 To get the latest version, simply require the project using [Composer](https://getcomposer.org):
 
@@ -20,7 +21,7 @@ To get the latest version, simply require the project using [Composer](https://g
 You can install the package via composer:
 
 ```bash
-composer require atiladanvi/cep-repository
+composer require atiladanvi/cep
 ```
 
 ## Usage
