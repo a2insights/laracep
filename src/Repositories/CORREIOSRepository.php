@@ -5,7 +5,7 @@ namespace CepRepository\Repositories;
 use CepRepository\Clients\CORREIROSClient;
 use SimpleXMLElement;
 
-class CepCORREIROSRepository extends CepRepositoryAbstract
+class CORREIOSRepository extends RepositoryAbstract
 {
     public function __construct()
     {

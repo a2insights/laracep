@@ -2,13 +2,13 @@
 
 namespace CepRepository\Repositories;
 
-use CepRepository\Clients\WEBMANIAClient;
+use CepRepository\Clients\VIAClient;
 
-class CepWEBMANIARepository extends CepRepositoryAbstract
+class VIARepository extends RepositoryAbstract
 {
     public function __construct()
     {
-        parent::__construct(WEBMANIAClient::class);
+        parent::__construct(VIAClient::class);
     }
 
     public function transform($data): array
@@ -16,9 +16,9 @@ class CepWEBMANIARepository extends CepRepositoryAbstract
         return [
             'cep' => $data->cep,
             'estado' => $data->uf,
-            'municipio' => $data->cidade,
+            'municipio' => $data->localidade,
             'bairro' => $data->bairro,
-            'logradouro' => $data->endereco,
+            'logradouro' => $data->logradouro,
         ];
     }
 }

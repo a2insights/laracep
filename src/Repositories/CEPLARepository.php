@@ -2,13 +2,13 @@
 
 namespace CepRepository\Repositories;
 
-use CepRepository\Clients\VIAClient;
+use CepRepository\Clients\CEPLAClient;
 
-class CepVIARepository extends CepRepositoryAbstract
+class CEPLARepository extends RepositoryAbstract
 {
     public function __construct()
     {
-        parent::__construct(VIAClient::class);
+        parent::__construct(CEPLAClient::class);
     }
 
     public function transform($data): array
@@ -16,7 +16,7 @@ class CepVIARepository extends CepRepositoryAbstract
         return [
             'cep' => $data->cep,
             'estado' => $data->uf,
-            'municipio' => $data->localidade,
+            'municipio' => $data->cidade,
             'bairro' => $data->bairro,
             'logradouro' => $data->logradouro,
         ];

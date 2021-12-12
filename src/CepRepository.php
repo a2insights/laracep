@@ -2,7 +2,8 @@
 
 namespace CepRepository;
 
-use CepRepository\Repositories\CepPOSTMONRepository;
+use CepRepository\Repositories\CORREIOSRepository;
+use Illuminate\Support\Str;
 
 /**
  * Class CepRepository
@@ -16,7 +17,9 @@ class CepRepository
      */
     public static function get($cep)
     {
-        $repository = app(CepPOSTMONRepository::class);
+        $className = 'CepRepository\\Repositories\\'.Str::upper(config('cep.default')).'Repository';
+
+        $repository = class_exists($className) ? app($className) : app(CORREIOSRepository::class);
 
         return $repository->get($cep);
     }

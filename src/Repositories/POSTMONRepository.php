@@ -4,7 +4,7 @@ namespace CepRepository\Repositories;
 
 use CepRepository\Clients\POSTMONClient;
 
-class CepPOSTMONRepository extends CepRepositoryAbstract
+class POSTMONRepository extends RepositoryAbstract
 {
     public function __construct()
     {

@@ -2,7 +2,9 @@
 
 namespace CepRepository\Handlers;
 
+use CepRepository\Repositories\POSTMONRepository;
+
 class POSTMONHandler extends AbstractHandler
 {
-    protected $repository = "CepRepository\Repositories\CepPOSTMONRepository";
+    protected $repository = POSTMONRepository::class;
 }

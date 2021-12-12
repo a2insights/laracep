@@ -14,7 +14,7 @@ use League\Fractal\Resource\Item;
 use League\Fractal\Serializer\ArraySerializer;
 
 
-abstract class CepRepositoryAbstract implements CepRepositoryContract, Transformable
+abstract class RepositoryAbstract implements CepRepositoryContract, Transformable
 {
     /**
      * Client instance
@@ -43,7 +43,7 @@ abstract class CepRepositoryAbstract implements CepRepositoryContract, Transform
     private $responseContents;
 
     /**
-     * CepRepositoryAbstract constructor
+     * RepositoryAbstract constructor
      *
      * @param $client
      */

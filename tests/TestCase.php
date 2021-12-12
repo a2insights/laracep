@@ -16,6 +16,7 @@ abstract  class TestCase extends  \Orchestra\Testbench\TestCase
         }
 
         $app['config']->set([
+            'cep.default' => env('CEP_SERVICES_DEFAULT', 'correios'),
             'cep.private_services.enable' => (bool) env('CEP_SERVICES_PRIVATE', false),
             'cep.private_services.webmania' => [
                 'active' => env('CEP_SERVICES_WEBMANIA'),
