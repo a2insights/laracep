@@ -1,9 +1,9 @@
 <?php
 
-namespace Atiladanvi\CepRepository\Tests;
+namespace CepRepository\Tests;
 
-use Atiladanvi\CepRepository\Handlers\POSTMONHandler;
-use Atiladanvi\CepRepository\Handlers\VIAHandler;
+use CepRepository\Handlers\POSTMONHandler;
+use CepRepository\Handlers\VIAHandler;
 
 class HandlersTest extends TestCase
 {

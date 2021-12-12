@@ -1,8 +1,8 @@
 <?php
 
-namespace Atiladanvi\CepRepository\Repositories;
+namespace CepRepository\Repositories;
 
-use Atiladanvi\CepRepository\Clients\CEPLAClient;
+use CepRepository\Clients\CEPLAClient;
 
 class CepCEPLARepository extends CepRepositoryAbstract
 {

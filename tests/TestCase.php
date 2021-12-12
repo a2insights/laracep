@@ -1,6 +1,6 @@
 <?php
 
-namespace Atiladanvi\CepRepository\Tests;
+namespace CepRepository\Tests;
 
 abstract  class TestCase extends  \Orchestra\Testbench\TestCase
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Atiladanvi\CepRepository\Tests;
+namespace CepRepository\Tests;
 
-use Atiladanvi\CepRepository\Repositories\CepPOSTMONRepository;
+use CepRepository\Repositories\CepPOSTMONRepository;
 
 class POSTMONRepositoryTest extends TestCase
 {

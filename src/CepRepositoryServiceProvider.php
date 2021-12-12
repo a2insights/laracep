@@ -1,6 +1,6 @@
 <?php
 
-namespace Atiladanvi\CepRepository;
+namespace CepRepository;
 
 use Illuminate\Support\ServiceProvider;
 

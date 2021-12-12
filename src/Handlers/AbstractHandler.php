@@ -1,8 +1,8 @@
 <?php
 
-namespace Atiladanvi\CepRepository\Handlers;
+namespace CepRepository\Handlers;
 
-use Atiladanvi\CepRepository\Contracts\HandlerContract;
+use CepRepository\Contracts\HandlerContract;
 
 abstract class AbstractHandler implements HandlerContract
 {

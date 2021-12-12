@@ -1,12 +1,12 @@
 <?php
 
-namespace Atiladanvi\CepRepository\Contracts;
+namespace CepRepository\Contracts;
 
-use Atiladanvi\CepRepository\Address;
+use CepRepository\Address;
 
 /**
  * Interface CepRepositoryContract
- * @package Atiladanvi\CepRepository\Contracts
+ * @package CepRepository\Contracts
  */
 interface CepRepositoryContract
 {

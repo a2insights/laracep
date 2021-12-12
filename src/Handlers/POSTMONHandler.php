@@ -1,8 +1,8 @@
 <?php
 
-namespace Atiladanvi\CepRepository\Handlers;
+namespace CepRepository\Handlers;
 
 class POSTMONHandler extends AbstractHandler
 {
-    protected $repository = "Atiladanvi\CepRepository\Repositories\CepPOSTMONRepository";
+    protected $repository = "CepRepository\Repositories\CepPOSTMONRepository";
 }

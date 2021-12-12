@@ -1,8 +1,8 @@
 <?php
 
-namespace Atiladanvi\CepRepository\Repositories;
+namespace CepRepository\Repositories;
 
-use Atiladanvi\CepRepository\Clients\WEBMANIAClient;
+use CepRepository\Clients\WEBMANIAClient;
 
 class CepWEBMANIARepository extends CepRepositoryAbstract
 {

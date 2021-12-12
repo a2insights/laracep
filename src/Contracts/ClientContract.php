@@ -1,10 +1,10 @@
 <?php
 
-namespace Atiladanvi\CepRepository\Contracts;
+namespace CepRepository\Contracts;
 
 /**
  * Interface ClientContract
- * @package Atiladanvi\CepRepository\Contracts
+ * @package CepRepository\Contracts
  */
 interface ClientContract
 {

@@ -1,13 +1,13 @@
 <?php
 
-namespace Atiladanvi\CepRepository\Clients;
+namespace CepRepository\Clients;
 
-use Atiladanvi\CepRepository\Contracts\ClientContract;
+use CepRepository\Contracts\ClientContract;
 use GuzzleHttp\Client as Client;
 
 /**
  * Class GuzzleClient
- * @package Atiladanvi\CepRepository\Clients
+ * @package ACepRepository\Clients
  */
 abstract class GuzzleClient implements ClientContract
 {

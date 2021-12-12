@@ -1,8 +1,8 @@
 <?php
 
-namespace Atiladanvi\CepRepository\Contracts;
+namespace CepRepository\Contracts;
 
-use Atiladanvi\CepRepository\Address;
+use CepRepository\Address;
 
 interface Transformable
 {

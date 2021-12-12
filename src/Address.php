@@ -1,10 +1,10 @@
 <?php
 
-namespace Atiladanvi\CepRepository;
+namespace CepRepository;
 
 /**
  * Class Address
- * @package Atiladanvi\CepRepository
+ * @package CepRepository
  */
 class Address
 {

@@ -31,7 +31,7 @@ $adress = CepRepository::get($cep);
 output:
 
 ```php
-Atiladanvi\CepRepository\Address {
+CepRepository\Address {
   +cep: "66911030"
   +estado: "Pará"
   +municipio: "Belém"

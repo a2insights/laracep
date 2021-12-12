@@ -1,8 +1,8 @@
 <?php
 
-namespace Atiladanvi\CepRepository\Tests;
+namespace CepRepository\Tests;
 
-use Atiladanvi\CepRepository\Repositories\CepCORREIROSRepository;
+use CepRepository\Repositories\CepCORREIROSRepository;
 
 class CORREIOSRepositoryTest extends TestCase
 {

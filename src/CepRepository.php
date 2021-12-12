@@ -1,12 +1,12 @@
 <?php
 
-namespace Atiladanvi\CepRepository;
+namespace CepRepository;
 
-use Atiladanvi\CepRepository\Repositories\CepPOSTMONRepository;
+use CepRepository\Repositories\CepPOSTMONRepository;
 
 /**
  * Class CepRepository
- * @package Atiladanvi\CepRepository
+ * @package CepRepository
  */
 class CepRepository
 {

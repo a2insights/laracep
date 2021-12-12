@@ -1,12 +1,12 @@
 <?php
 
-namespace Atiladanvi\CepRepository;
+namespace CepRepository;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
  * Class CepRepositoryFacade
- * @package Atiladanvi\CepRepository
+ * @package CepRepository
  */
 class CepRepositoryFacade extends Facade
 {

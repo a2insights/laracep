@@ -1,8 +1,8 @@
 <?php
 
-namespace Atiladanvi\CepRepository\Repositories;
+namespace CepRepository\Repositories;
 
-use Atiladanvi\CepRepository\Clients\CORREIROSClient;
+use CepRepository\Clients\CORREIROSClient;
 use SimpleXMLElement;
 
 class CepCORREIROSRepository extends CepRepositoryAbstract

@@ -1,6 +1,6 @@
 <?php
 
-namespace Atiladanvi\CepRepository\Clients;
+namespace CepRepository\Clients;
 
 class VIAClient extends GuzzleClient
 {

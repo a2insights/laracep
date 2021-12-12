@@ -1,8 +1,8 @@
 <?php
 
-namespace Atiladanvi\CepRepository\Tests;
+namespace CepRepository\Tests;
 
-use Atiladanvi\CepRepository\Repositories\CepWEBMANIARepository;
+use CepRepository\Repositories\CepWEBMANIARepository;
 
 class WEBMANIARepositoryTest extends TestCase
 {

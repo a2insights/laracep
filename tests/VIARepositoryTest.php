@@ -1,8 +1,8 @@
 <?php
 
-namespace Atiladanvi\CepRepository\Tests;
+namespace CepRepository\Tests;
 
-use Atiladanvi\CepRepository\Repositories\CepVIARepository;
+use CepRepository\Repositories\CepVIARepository;
 use PHPUnit\Framework\TestCase;
 
 class VIARepositoryTest extends TestCase

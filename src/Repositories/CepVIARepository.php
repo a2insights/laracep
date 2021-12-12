@@ -1,8 +1,8 @@
 <?php
 
-namespace Atiladanvi\CepRepository\Repositories;
+namespace CepRepository\Repositories;
 
-use Atiladanvi\CepRepository\Clients\VIAClient;
+use CepRepository\Clients\VIAClient;
 
 class CepVIARepository extends CepRepositoryAbstract
 {

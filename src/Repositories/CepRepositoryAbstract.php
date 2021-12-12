@@ -1,12 +1,12 @@
 <?php
 
-namespace Atiladanvi\CepRepository\Repositories;
+namespace CepRepository\Repositories;
 
-use Atiladanvi\CepRepository\Address;
-use Atiladanvi\CepRepository\AddressFactory;
-use Atiladanvi\CepRepository\Contracts\CepRepositoryContract;
-use Atiladanvi\CepRepository\Contracts\Transformable;
-use Atiladanvi\CepRepository\Resources\AddressTransformer;
+use CepRepository\Address;
+use CepRepository\AddressFactory;
+use CepRepository\Contracts\CepRepositoryContract;
+use CepRepository\Contracts\Transformable;
+use CepRepository\Resources\AddressTransformer;
 use GuzzleHttp\Exception\BadResponseException;
 use Illuminate\Support\Facades\Log;
 use League\Fractal\Manager;
@@ -19,14 +19,14 @@ abstract class CepRepositoryAbstract implements CepRepositoryContract, Transform
     /**
      * Client instance
      *
-     * @var \Atiladanvi\CepRepository\Contracts\ClientContract|mixed
+     * @var \CepRepository\Contracts\ClientContract|mixed
      */
     protected $client;
 
     /**
      * Adress transformer
      *
-     * @var \Atiladanvi\CepRepository\Resources\AddressTransformer
+     * @var \CepRepository\Resources\AddressTransformer
      */
     protected $addressTransform;
 
@@ -59,7 +59,7 @@ abstract class CepRepositoryAbstract implements CepRepositoryContract, Transform
      * Get de address by cep
      *
      * @param string $cep
-     * @return \Atiladanvi\CepRepository\Address|null
+     * @return \CepRepository\Address|null
      * @throws \Exception
      */
     public function get(string $cep): ?Address

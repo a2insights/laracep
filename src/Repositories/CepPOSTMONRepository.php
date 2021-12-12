@@ -1,8 +1,8 @@
 <?php
 
-namespace Atiladanvi\CepRepository\Repositories;
+namespace CepRepository\Repositories;
 
-use Atiladanvi\CepRepository\Clients\POSTMONClient;
+use CepRepository\Clients\POSTMONClient;
 
 class CepPOSTMONRepository extends CepRepositoryAbstract
 {
