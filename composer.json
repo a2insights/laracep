@@ -1,5 +1,5 @@
 {
-    "name": "atiladanvi/cep",
+    "name": "a2insights/laracep",
     "description": "A single interface to get address from any cep service",
     "keywords": ["cep", "laravel"],
     "homepage": "https://github.com/atiladanvi/cep",
