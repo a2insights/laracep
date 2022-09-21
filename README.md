@@ -1,7 +1,7 @@
 # Cep 
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/atiladanvi/cep.svg?style=flat-square)](https://packagist.org/packages/atiladanvi/cep)
-[![Total Downloads](https://img.shields.io/packagist/dt/atiladanvi/cep.svg?style=flat-square)](https://packagist.org/packages/atiladanvi/cep)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/a2insights/laracep.svg?style=flat-square)](https://packagist.org/packages/a2insights/laracep)
+[![Total Downloads](https://img.shields.io/packagist/dt/a2insights/laracep.svg?style=flat-square)](https://packagist.org/packages/a2insights/laracep)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 Laravel Cep requires [PHP](https://php.net) 7.3-8.0. This particular version supports Laravel 5-8.
