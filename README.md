@@ -21,7 +21,7 @@ To get the latest version, simply require the project using [Composer](https://g
 You can install the package via composer:
 
 ```bash
-composer require atiladanvi/cep
+composer require a2insights/laracep
 ```
 
 ## Usage
