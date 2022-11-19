@@ -1,8 +1,8 @@
 <?php
 
-namespace Cep\Repositories;
+namespace A2insights\Laracep\Repositories;
 
-use Cep\Clients\WEBMANIAClient;
+use A2insights\Laracep\Clients\WEBMANIAClient;
 
 class WEBMANIARepository extends RepositoryAbstract
 {

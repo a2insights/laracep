@@ -1,8 +1,8 @@
 <?php
 
-namespace Cep\Resources;
+namespace A2insights\Laracep\Resources;
 
-use Cep\Contracts\Transformable;
+use A2insights\Laracep\Contracts\Transformable;
 use League\Fractal\TransformerAbstract;
 
 class AddressTransformer extends TransformerAbstract implements Transformable

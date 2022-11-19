@@ -1,6 +1,6 @@
 <?php
 
-namespace Cep\Tests;
+namespace A2insights\Laracep\Test;
 
 abstract  class TestCase extends  \Orchestra\Testbench\TestCase
 {
@@ -16,13 +16,13 @@ abstract  class TestCase extends  \Orchestra\Testbench\TestCase
         }
 
         $app['config']->set([
-            'cep.default' => env('CEP_SERVICES_DEFAULT', 'correios'),
-            'cep.private_services.enable' => (bool) env('CEP_SERVICES_PRIVATE', false),
-            'cep.private_services.webmania' => [
-                'active' => env('CEP_SERVICES_WEBMANIA'),
+            'laracep.default' => env('LARACEP_SERVICES_DEFAULT', 'correios'),
+            'laracep.private_services.enable' => (bool) env('LARACEP_SERVICES_PRIVATE', false),
+            'laracep.private_services.webmania' => [
+                'active' => env('LARACEP_SERVICES_WEBMANIA'),
                 'credentials' => [
-                    'app_key' => env('CEP_SERVICES_WEBMANIA_KEY'),
-                    'app_secret' => env('CEP_SERVICES_WEBMANIA_SECRET'),
+                    'app_key' => env('LARACEP_SERVICES_WEBMANIA_KEY'),
+                    'app_secret' => env('LARACEP_SERVICES_WEBMANIA_SECRET'),
                 ]
             ]
         ]);

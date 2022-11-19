@@ -20,7 +20,7 @@ return [
     | Here you can set de values: ['correios', 'postmon', 'via', 'webmanya', 'ceplar']
     |
    */
-    'default' => env('CEP_SERVICES_DEFAULT', 'correios'),
+    'default' => env('LARACEP_SERVICES_DEFAULT', 'correios'),
 
 
     /*
@@ -42,7 +42,7 @@ return [
          | Here you can active or disable all private services
          |
         */
-        'enable' => (bool) env('CEP_SERVICES_PRIVATE', false),
+        'enable' => (bool) env('LARACEP_SERVICES_PRIVATE', false),
 
         /*
          |--------------------------------------------------------------------------
@@ -66,10 +66,10 @@ return [
         */
 
         'webmania' => [
-           'active' => env('CEP_SERVICES_WEBMANIA'),
+           'active' => env('LARACEP_SERVICES_WEBMANIA'),
            'credentials' => [
-               'app_key' => env('CEP_SERVICES_WEBMANIA_KEY'),
-               'app_secret' => env('CEP_SERVICES_WEBMANIA_SECRET'),
+               'app_key' => env('LARACEP_SERVICES_WEBMANIA_KEY'),
+               'app_secret' => env('LARACEP_SERVICES_WEBMANIA_SECRET'),
            ]
         ]
     ]

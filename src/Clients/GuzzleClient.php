@@ -1,8 +1,8 @@
 <?php
 
-namespace Cep\Clients;
+namespace A2insights\Laracep\Clients;
 
-use Cep\Contracts\ClientContract;
+use A2insights\Laracep\Contracts\ClientContract;
 use GuzzleHttp\Client as Client;
 
 /**
@@ -63,7 +63,7 @@ abstract class GuzzleClient implements ClientContract
     /**
      * Method of request
      *
-     * @var array
+     * @var string
      */
     protected $method = 'GET';
 

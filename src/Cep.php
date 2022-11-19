@@ -1,8 +1,8 @@
 <?php
 
-namespace Cep;
+namespace A2insights\Laracep;
 
-use Cep\Repositories\CORREIOSRepository;
+use A2insights\Laracep\Repositories\CORREIOSRepository;
 use Illuminate\Support\Str;
 
 /**
@@ -17,7 +17,7 @@ class Cep
      */
     public static function get($cep)
     {
-        $className = 'Cep\\Repositories\\'.Str::upper(config('cep.default')).'Repository';
+        $className = 'A2insights\\LaraCep\\Repositories\\'.Str::upper(config('cep.default')).'Repository';
 
         $repository = class_exists($className) ? app($className) : app(CORREIOSRepository::class);
 

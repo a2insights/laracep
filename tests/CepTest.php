@@ -1,10 +1,10 @@
 <?php
 
-namespace Cep\Tests;
+namespace A2insights\Laracep\Test;
 
-use Cep\Cep;
+use A2insights\Laracep\Cep;
 
-class CepTest  extends TestCase
+class CepTest extends TestCase
 {
     public function testGet()
     {

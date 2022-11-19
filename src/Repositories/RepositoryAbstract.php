@@ -1,12 +1,12 @@
 <?php
 
-namespace Cep\Repositories;
+namespace A2insights\Laracep\Repositories;
 
-use Cep\Address;
-use Cep\AddressFactory;
-use Cep\Contracts\CepRepositoryContract;
-use Cep\Contracts\Transformable;
-use Cep\Resources\AddressTransformer;
+use A2insights\Laracep\Address;
+use A2insights\Laracep\AddressFactory;
+use A2insights\Laracep\Contracts\CepRepositoryContract;
+use A2insights\Laracep\Contracts\Transformable;
+use A2insights\Laracep\Resources\AddressTransformer;
 use GuzzleHttp\Exception\BadResponseException;
 use Illuminate\Support\Facades\Log;
 use League\Fractal\Manager;
@@ -19,14 +19,14 @@ abstract class RepositoryAbstract implements CepRepositoryContract, Transformabl
     /**
      * Client instance
      *
-     * @var \Cep\Contracts\ClientContract|mixed
+     * @var \namespace A2insights\Laracep\Contracts\ClientContract|mixed
      */
     protected $client;
 
     /**
      * Adress transformer
      *
-     * @var \Cep\Resources\AddressTransformer
+     * @var \A2insights\Laracep\Resources\AddressTransformer
      */
     protected $addressTransform;
 
@@ -59,7 +59,7 @@ abstract class RepositoryAbstract implements CepRepositoryContract, Transformabl
      * Get de address by cep
      *
      * @param string $cep
-     * @return \Cep\Address|null
+     * @return \A2insights\Laracep\Address|null
      * @throws \Exception
      */
     public function get(string $cep): ?Address

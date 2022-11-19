@@ -1,6 +1,6 @@
 <?php
 
-namespace Cep;
+namespace A2insights\Laracep;
 
 use Illuminate\Support\Facades\Facade;
 

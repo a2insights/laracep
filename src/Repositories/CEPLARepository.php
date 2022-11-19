@@ -1,8 +1,8 @@
 <?php
 
-namespace Cep\Repositories;
+namespace A2insights\Laracep\Repositories;
 
-use Cep\Clients\CEPLAClient;
+use A2insights\Laracep\Clients\CEPLAClient;
 
 class CEPLARepository extends RepositoryAbstract
 {

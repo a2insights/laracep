@@ -1,10 +1,10 @@
 <?php
 
-namespace Cep\Contracts;
+namespace A2insights\Laracep\Contracts;
 
 /**
  * Interface ClientContract
- * @package Cep\Contracts
+ * @package namespace A2insights\Laracep\Contracts
  */
 interface ClientContract
 {

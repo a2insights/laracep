@@ -1,6 +1,6 @@
 <?php
 
-namespace Cep\Clients;
+namespace A2insights\Laracep\Clients;
 
 class CORREIROSClient extends GuzzleClient
 {

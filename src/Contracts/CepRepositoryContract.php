@@ -1,12 +1,12 @@
 <?php
 
-namespace Cep\Contracts;
+namespace A2insights\Laracep\Contracts;
 
-use Cep\Address;
+use A2insights\Laracep\Address;
 
 /**
  * Interface CepContract
- * @package Cep\Contracts
+ * @package namespace A2insights\Laracep\Contracts
  */
 interface CepRepositoryContract
 {

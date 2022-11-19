@@ -1,8 +1,8 @@
 <?php
 
-namespace Cep\Repositories;
+namespace A2insights\Laracep\Repositories;
 
-use Cep\Clients\VIAClient;
+use A2insights\Laracep\Clients\VIAClient;
 
 class VIARepository extends RepositoryAbstract
 {

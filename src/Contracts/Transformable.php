@@ -1,8 +1,6 @@
 <?php
 
-namespace Cep\Contracts;
-
-use Cep\Address;
+namespace A2insights\Laracep\Contracts;
 
 interface Transformable
 {

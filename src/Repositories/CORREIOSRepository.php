@@ -1,8 +1,8 @@
 <?php
 
-namespace Cep\Repositories;
+namespace A2insights\Laracep\Repositories;
 
-use Cep\Clients\CORREIROSClient;
+use A2insights\Laracep\Clients\CORREIROSClient;
 use SimpleXMLElement;
 
 class CORREIOSRepository extends RepositoryAbstract
