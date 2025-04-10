@@ -5,211 +5,99 @@ namespace A2insights\Laracep\Clients;
 use A2insights\Laracep\Contracts\ClientContract;
 use GuzzleHttp\Client as Client;
 
-/**
- * Class GuzzleClient
- * @package ACep\Clients
- */
 abstract class GuzzleClient implements ClientContract
 {
-    /**
-     * Base uri
-     *
-     * @var string
-     */
-    protected $baseUri;
+    protected string $baseUri;
 
-    /**
-     * Guzzle client
-     *
-     * @var Client
-     */
-    protected $client;
+    protected Client $client;
 
-    /**
-     * Cep
-     *
-     * @var string
-     */
-    protected $cep;
+    protected array $body = [];
 
-    /**
-     * Body
-     *
-     * @var string
-     */
-    protected $body;
+    protected array $params = [];
 
-    /**
-     * Form params
-     *
-     * @var array
-     */
-    protected $params = [];
+    protected array $query = [];
 
-    /**
-     * Query
-     *
-     * @var array
-     */
-    protected $query = [];
+    protected string $uri;
 
-    /**
-     * Header of request
-     *
-     * @var array
-     */
-    protected $headers = [];
+    protected array $headers = [];
 
-    /**
-     * Method of request
-     *
-     * @var string
-     */
-    protected $method = 'GET';
+    protected string $method = 'GET';
 
-    /**
-     * GuzzleClient constructor.
-     */
     public function __construct()
     {
-        $this->client = new Client(
-            [
-                'base_uri' => $this->baseUri
-            ]
-        );
+        $this->client = new Client(['base_uri' => $this->baseUri]);
 
         return $this;
     }
 
-    /**
-     * @param string $cep
-     * @return GuzzleClient
-     */
-    public function setCep(string $cep) : GuzzleClient
+    public function setHeaders(array $headers): GuzzleClient
     {
-        $this->cep = $cep;
+        $this->headers = array_merge($headers, [
+            'Accept' => 'application/json',
+            'Content-Type' => 'application/json'
+        ]);
 
         return $this;
     }
 
-    /**
-     * Set headers
-     *
-     * @param  $headers
-     * @return GuzzleClient
-     */
-    public function setHeaders(array $headers) : GuzzleClient
-    {
-        $this->headers = array_merge($headers,
-            [
-                'Accept' => 'application/json',
-                'Content-Type' => 'application/json'
-            ]
-        );
-
-        return $this;
-    }
-
-    /**
-     * Set params
-     *
-     * @param $params
-     * @return $this
-     */
-    public function setParams(array $params) : GuzzleClient
+    public function setParams(array $params): GuzzleClient
     {
         $this->params = $params;
 
         return $this;
     }
 
-    /**
-     * Set body
-     *
-     * @param string $body
-     * @return $this
-     */
-    public function setBody($body) : GuzzleClient
+    public function setBody(array $body): GuzzleClient
     {
         $this->body = $body;
 
         return $this;
     }
 
-    /**
-     * Set query
-     *
-     * @param array $query
-     * @return GuzzleClient
-     */
-    public function setQuery(array $query) : GuzzleClient
+    public function setQuery(array $query): GuzzleClient
     {
         $this->query = $query;
 
         return $this;
     }
 
-    /**
-     * Get uri
-     *
-     * @return string
-     */
-    public function getUri()
+    public function setUri(string $uri): GuzzleClient
     {
-        return $this->cep;
+        $this->uri = $uri;
+
+        return $this;
     }
 
-    /**
-     * Get headers
-     *
-     * @return string
-     */
-    public function getBody()
+    public function getUri(): ?string
+    {
+        return $this->uri;
+    }
+
+    public function getBody(): string|array
     {
         return $this->body;
     }
 
-    /**
-     * Get headers
-     *
-     * @return mixed
-     */
-    public function getHeaders()
+    public function getHeaders(): array
     {
         return $this->headers;
     }
 
-    /**
-     * Get params
-     *
-     * @return array
-     */
-    public function getParams()
+    public function getParams(): array
     {
         return $this->params;
     }
 
-    /**
-     * Get query
-     *
-     * @return array
-     */
-    public function getQuery()
+    public function getQuery(): array
     {
         return $this->query;
     }
 
-    /**
-     * Request
-     *
-     * @return mixed
-     * @throws \GuzzleHttp\Exception\GuzzleException
-     */
     public function request()
     {
         return $this->client->request($this->method, $this->getUri(),
             collect([
-                'headers' =>  $this->getHeaders(),
+                'headers' => $this->getHeaders(),
                 'form_params' => $this->getParams(),
                 'body' => $this->getBody(),
                 'query' => $this->getQuery()

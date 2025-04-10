@@ -4,10 +4,10 @@ namespace A2insights\Laracep\Clients;
 
 class VIAClient extends GuzzleClient
 {
-    protected $baseUri = 'https://viacep.com.br/ws/';
+    protected string $baseUri = 'https://viacep.com.br/ws/';
 
-    public function getUri()
+    public function getUri(): string
     {
-        return "$this->cep/json";
+        return "$this->uri/json";
     }
 }

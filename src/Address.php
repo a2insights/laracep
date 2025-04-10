@@ -2,57 +2,14 @@
 
 namespace A2insights\Laracep;
 
-/**
- * Class Address
- * @package Cep
- */
 class Address
 {
-    /**
-     * Cep number
-     * @var string
-     */
-    public $cep;
-
-    /**
-     * state name
-     * @var string
-     */
-    public $estado;
-
-    /**
-     * city name
-     * @var string
-     */
-    public $municipio;
-
-    /**
-     * district name
-     * @var string
-     */
-    public $bairro;
-
-    /**
-     * street name
-     * @var string
-     */
-    public $logradouro;
-
-    /**
-     * Address constructor
-     *
-     * @param $cep
-     * @param $estado
-     * @param $municipio
-     * @param $bairro
-     * @param $logradouro
-     */
-    public function __construct($cep, $estado, $municipio, $bairro, $logradouro)
-    {
-        $this->cep = $cep;
-        $this->estado = $estado;
-        $this->municipio = $municipio;
-        $this->bairro = $bairro;
-        $this->logradouro = $logradouro;
+    public function __construct(
+        public string $cep,
+        public string $estado,
+        public string $municipio,
+        public string $bairro,
+        public string $logradouro
+    ) {
     }
 }

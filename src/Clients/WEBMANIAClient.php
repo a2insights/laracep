@@ -4,9 +4,9 @@ namespace A2insights\Laracep\Clients;
 
 class WEBMANIAClient extends GuzzleClient
 {
-    protected $baseUri = 'https://webmaniabr.com/api/1/cep/';
+    protected string $baseUri = 'https://webmaniabr.com/api/1/cep/';
 
-    public function getQuery()
+    public function getQuery(): array
     {
         return [
             'app_key' => config('cep.private_services.webmania.credentials.app_key'),
