@@ -2,7 +2,7 @@
 
 namespace A2insights\Laracep\Test;
 
-abstract  class TestCase extends  \Orchestra\Testbench\TestCase
+abstract class TestCase extends  \Orchestra\Testbench\TestCase
 {
     protected function setUp(): void
     {
@@ -12,7 +12,7 @@ abstract  class TestCase extends  \Orchestra\Testbench\TestCase
     protected function getEnvironmentSetUp($app)
     {
         if (file_exists(__DIR__ . '/../.env')) {
-            \Dotenv\Dotenv::createImmutable(__DIR__ . '../..' )->load();
+            \Dotenv\Dotenv::createImmutable(__DIR__ . '../..')->load();
         }
 
         $app['config']->set([

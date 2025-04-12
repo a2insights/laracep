@@ -2,16 +2,16 @@
 
 namespace A2insights\Laracep\Repositories;
 
-use A2insights\Laracep\Clients\WEBMANIAClient;
+use A2insights\Laracep\Clients\ViaClient;
 
-class WEBMANIARepository extends RepositoryAbstract
+class ViaRepository extends RepositoryAbstract
 {
     public function __construct()
     {
-        parent::__construct(WEBMANIAClient::class);
+        parent::__construct(ViaClient::class);
     }
 
-    public function transform($data): array
+    public function transform(array $data): array
     {
         return [
             'cep' => $data['cep'],

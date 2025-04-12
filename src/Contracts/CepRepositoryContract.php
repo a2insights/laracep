@@ -6,5 +6,5 @@ use A2insights\Laracep\Address;
 
 interface CepRepositoryContract
 {
-   public function get(string $cep): ?Address;
+   public function get(string $cep): ?array;
 }

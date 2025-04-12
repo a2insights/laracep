@@ -2,7 +2,7 @@
 
 namespace A2insights\Laracep\Clients;
 
-class VIAClient extends GuzzleClient
+class ViaClient extends GuzzleClient
 {
     protected string $baseUri = 'https://viacep.com.br/ws/';
 

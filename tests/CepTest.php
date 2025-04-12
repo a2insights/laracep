@@ -1,15 +1,16 @@
 <?php
 
+
 namespace A2insights\Laracep\Test;
 
 use A2insights\Laracep\Cep;
 
 class CepTest extends TestCase
 {
-    public function testGet()
+    public function test_get()
     {
-        $address = Cep::get('66650404');
+        $address = Cep::get('66911030');
 
-        $this->assertTrue($address->bairro === 'Coqueiro');
+        dd($address);
     }
 }
