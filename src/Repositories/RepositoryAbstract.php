@@ -2,22 +2,16 @@
 
 namespace A2insights\Laracep\Repositories;
 
-use A2insights\Laracep\Address;
-use A2insights\Laracep\AddressFactory;
 use A2insights\Laracep\Contracts\CepRepositoryContract;
 use A2insights\Laracep\Contracts\ClientContract;
-use A2insights\Laracep\Contracts\Transformable;
-use A2insights\Laracep\Resources\AddressTransformer;
 use A2insights\Laracep\Exceptions\CepServiceException;
 use Illuminate\Support\Facades\Log;
 use League\Fractal\Manager;
-use League\Fractal\Resource\Item;
 use League\Fractal\Serializer\ArraySerializer;
 
-abstract class RepositoryAbstract implements CepRepositoryContract, Transformable
+abstract class RepositoryAbstract implements CepRepositoryContract
 {
     protected ClientContract $client;
-    protected Transformable $addressTransform;
     protected Manager $manager;
     private string $responseContents;
     private array $fallbackClients = [];
@@ -26,7 +20,6 @@ abstract class RepositoryAbstract implements CepRepositoryContract, Transformabl
     public function __construct($client)
     {
         $this->client = app($client);
-        $this->addressTransform = app(AddressTransformer::class);
         $this->manager = new Manager();
         $this->manager->setSerializer(app(ArraySerializer::class));
     }
@@ -79,6 +72,8 @@ abstract class RepositoryAbstract implements CepRepositoryContract, Transformabl
     protected function createData(): ?array
     {
         $data = $this->parseContents($this->responseContents);
+
+        dd(($data));
 
         return $data;
     }

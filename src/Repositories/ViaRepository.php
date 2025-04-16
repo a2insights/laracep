@@ -4,7 +4,7 @@ namespace A2insights\Laracep\Repositories;
 
 use A2insights\Laracep\Clients\ViaClient;
 
-class ViaRepository extends RepositoryAbstract
+final class ViaRepository extends RepositoryAbstract
 {
     public function __construct()
     {

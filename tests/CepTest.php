@@ -11,6 +11,13 @@ class CepTest extends TestCase
     {
         $address = Cep::get('66911030');
 
-        dd($address);
+        $this->assertArrayHasKey('cep', $address);
+        $this->assertArrayHasKey('estado', $address);
+        $this->assertArrayHasKey('uf', $address);
+        $this->assertArrayHasKey('ibge', $address);
+        $this->assertArrayHasKey('siafi', $address);
+        $this->assertArrayHasKey('municipio', $address);
+        $this->assertArrayHasKey('bairro', $address);
+        $this->assertArrayHasKey('logradouro', $address);
     }
 }
